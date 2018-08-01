@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Webpage title -->
+    <title>Contact - Creative Website</title>
+
+    <!-- Meta tag to access responsive media queries: -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Link to Google Fonts: -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,700" rel="stylesheet">
+
+    <!-- Link to Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+
+    <!-- External CSS stylesheet -->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <!-- HEADER STARTS (note: this header html apples to all 3 pages, Home, Contact and Blog) -->
+    <header class="contactHeader">
+        <div class="wrapper">
+            <!-- Header Menu starts -->
+            <nav class="headerMenu">
+                <ul class="clearfix">
+                    <div class="leftMenu">
+                        <li>
+                            <a href="index.html"><span class="strikeThrough">Home</span></a>
+                        </li>
+                        <li>
+                            <a href="blog.html"><span class="strikeThrough">Blog</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="strikeThrough">Portfolio</span></a>
+                        </li>
+                    </div>
+                    <div class="rightMenu">
+                        <li>
+                            <a href="#"><span class="strikeThrough">Shop</span></a>
+                        </li>
+                        <li>
+                            <a href="contact.html"><span class="strikeThrough">Contact</span></a>
+                        </li>
+                        <!-- Header Icons start -->
+                        <li>
+                            <i class="fas fa-search"></i>
+                        </li>
+                        <li id="shoppingItems">
+                            <i class="fas fa-shopping-bag"></i>
+                        </li>
+                        <!-- end of Header Icons -->
+                    </div>
+                </ul>
+            </nav>
+            <!-- Header Menu ends -->
+        
+            <!-- Main Heading starts -->
+            <h1>Creative</h1>
+            <!-- Main Heading ends -->
+        </div>
+        <!-- second heading and background starts -->
+        <div class="contactBackground clearfix">
+            <div class="wrapper">
+                <h2>Contact Us</h2>
+            </div>
+        </div>
+        <!-- end of second heading and background -->
+    </header>
+    <!-- HEADER ENDS -->
+
+     <!-- CONTACT MAIN SECTION STARTS -->
+     <main>
+        <!-- SECTION 1 (CONTACT INFO) -->
+        <section class="contactInfoSection wrapper">
+            <!-- Contact Info Heading ends -->
+            <h3>Contact Details</h3>
+            <p>If you need any help, please contact us or send us an email or go to our forum. We are sure that you can receive our reply as soon as possible.</p>
+        
+            <!-- Contact Icons (all 3) starts -->
+            <div class="contactIcons clearfix">
+                <!-- Icon 1 (Phone) -->
+                <div class="contactPhone contactIcon">
+                    <!-- Phone Icon -->
+                    <i class="fas fa-mobile-alt"></i>
+                    <h4>Phone</h4>
+                    <p>Phone 01: 123, 456 7890</p>
+                    <p>Phone 02: 345 678 9101</p>
+                </div>
+                <!-- end of Icon 1 (Phone) -->
+        
+                <!-- Icon 2 (Address) -->
+                <div class="contactAddress contactIcon">
+                    <!-- Address Icon -->
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h4>Address</h4>
+                    <p>6591 Orchard Street, Toronto, Ontario</p>
+                </div>
+                <!-- end of Icon 2 (Address) -->
+        
+                <!-- Icon 3 (Email) -->
+                <div class="contactEmail contactIcon">
+                    <!-- Email Icon -->
+                    <i class="fas fa-envelope"></i>
+                    <h4>Email</h4>
+                    <p>contact@creative.com</p>
+                    <p>info@creative.com</p>
+                </div>
+                <!-- end of Icon 3 (Email) -->
+            </div>
+            <!-- end of all 3 Contact Icons -->
+        
+            <!-- Contact Form Starts -->
+            <div class="contactForm">
+                <h3>Get in touch with us</h3>
+                <p>If you have any question, Please don't hesitate to send us a message</p>
+                <form action="POST">
+                   <!-- Form First Row starts -->
+                    <div class="formRow1 clearfix">
+                        <!-- Name Input -->
+                        <label for="name" class="visuallyHidden">Name</label>
+                        <input type="text" placeholder="Enter your name..." id="name" name="name" class="name" required>
+                        <!-- end of Name Input -->
+                
+                        <!-- Email Input -->
+                        <label for="email" class="visuallyHidden">Email</label>
+                        <input type="email" placeholder="Youremail@domain.com" id="email" name="email" class="email" required>
+                        <!-- end of Email Input -->
+                
+                        <!-- Subject Input -->
+                        <label for="subject" class="visuallyHidden">Subject</label>
+                        <input type="text" placeholder="Subject (Optional)" id="subject" name="subject" class="subject">
+                    </div>
+                    <!-- Form First Row Ends -->
+                
+                    <!-- Form Second Row (Message Box) starts -->
+                    <label for="message" class="visuallyHidden">Message</label>
+                    <textarea name="message" id="message" rows="8" placeholder="Here goes your message"></textarea>
+                    <!-- end of Form Second Row (Message Box) -->
+                    
+                    <!-- Form Submit starts -->
+                    <input type="submit" value="Send Message" id="submit">
+                    <!-- end of Submit Input -->
+                </form>
+            </div>
+            <!-- end of Contact Form -->
+        </section>
+        <!-- END OF SECTION 1 (CONTACT INFO) -->
+
+        <!-- SECTION 2 (CONTACT IMG) STARTS -->
+        <section class="contactImgSection">
+            <!-- Background Image goes here (see style.css) -->
+        </section>
+    </main>
+    <!-- END OF MAIN SECTION -->
+
+    <!-- ASIDE SECTION (note: this header html apples to all 3 pages, Home, Contact and Blog) STARTS -->
+    <aside>
+        <!-- SECTION 3 (CONTACT US) STARTS -->
+        <section class="contactSection">
+            <div class="wrapper clearfix">
+                <!-- Contact Us Section, Column 1 starts-->
+                <div class="column1">
+                    <h4>Contact Us</h4>
+                    <div class="address">
+                        <ul>
+                            <li>6591 Orchard Street, Toronto, Ontario</li>
+                            <li>Email: contact@creative.com</li>
+                            <li>Phone 01: 123 456 7890</li>
+                            <li>Phone 02: 345 678 9101</li>
+                            <li>Fax: 643 6543 898</li>
+                        </ul>
+                    </div>
+                    <div class="socialMedia clearfix">
+                        <!-- Facebook -->
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <!-- Twitter -->
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <!-- Instagram -->
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- end of Contact Us Section, Column 1 -->
+    
+                <!-- Contact Us Section, Column 2 starts-->
+                <div class="column2">
+                    <h4>Recent Posts</h4>
+                    <ul>
+                        <li>
+                            <a href="#">Conversion hackathon partner</a>
+                        </li>
+                        <li>
+                            <a href="#">Network channels entrepreneur</a>
+                        </li>
+                        <li>
+                            <a href="#">Return on investment creative</a>
+                        </li>
+                        <li>
+                            <a href="#">Assets interaction design venture</a>
+                        </li>
+                        <li>
+                            <a href="#">Infographic learning curve</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- end of Contact Us Section, Column 2 -->
+    
+                <!-- Contact Us Section, Column 3 starts-->
+                <div class="column3">
+                    <!-- Contact Us Section Form starts -->
+                    <form action="">
+                        <h4>Subscribe Now</h4>
+                        <p>Signup for emails and notifications below</p>
+                        <div class="submitContainer clearfix">
+                            <button type="submit" class="emailBtn">
+                                <i class="fas fa-long-arrow-alt-right"></i>
+                            </button>
+                            <label for="email" class="visuallyHidden">Email</label>
+                            <input type="email" placeholder="Enter your email"></input>
+                        </div>
+                    </form>
+                    <!-- end of Contact Us Section Form -->
+                </div>
+                <!-- end of Contact Us Section, Column 3 -->
+            </div>
+        </section>
+        <!-- SECTION 6 (CONTACT US) ENDS -->
+    
+    </aside>
+    <!-- ASIDE SECTION ENDS -->
+    
+    <!-- FOOTER STARTS -->
+    <footer>
+        <p>Creative Agency</p>
+    </footer>
+    <!-- END OF FOOTER -->
+</body>
+</html>

@@ -1,0 +1,940 @@
+/* SETUP STYLES */
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.visuallyHidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+/* END OF SETUP STYLES */
+
+
+/* GENERAL STYLES (applies to Home, Blog and Contact */
+html {
+    font-family: 'Montserrat', sans-serif; /* (this font applies to ALL HEADINGS) */
+    font-size: 14px; /* base size */
+}
+
+.wrapper {
+    max-width: 1280px;
+    width: 75%;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 15px;
+}
+
+h1 {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2.313rem; 
+    position: absolute;
+    top: 0;
+    left: 40%;
+    right: 0;
+    margin: 0 auto;
+    clear: both;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.5rem; 
+}
+
+h4 {
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+p {
+    font-family: 'Open Sans',sans-serif;
+    letter-spacing: 0.5px;
+}
+
+ul {
+    padding-left: 0;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+/* GENERAL Header styles */
+.headerMenu li {
+    font-size: 0.875rem; 
+    font-weight: 400;
+    list-style: none;
+    text-transform: uppercase;
+    float: left;
+    padding: 15px 20px 20px 20px;
+}
+
+.leftMenu {
+    float: left;
+}
+
+.rightMenu {
+    float: right;
+}
+
+.strikeThrough {
+    position: relative;
+}
+
+.strikeThrough::after {
+    content: "";
+    height: 1px;
+    width: 125%;
+    background: black;
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    display: none;
+}
+
+.headerMenu li a:hover .strikeThrough::after {
+    display: block;
+}
+/* end of GENERAL Header styles */
+
+/* GENERAL Header Menu Icon styles */
+.fa-search {
+    font-size: 1.25rem;
+}
+
+header .fa-shopping-bag {
+    font-size: 1.125rem;
+}
+
+#shoppingItems {
+    position: relative;
+}
+
+#shoppingItems::after {
+    content: '2';
+    font-size: 10px;
+    line-height: 1.5;
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    background: #c3dab7;
+    border-radius: 50px;
+    text-align: center;
+    position: absolute;
+    top: 25px;
+    right: 8px;
+}
+/* end of GENERAL Header styles */
+
+/* GENERAL Aside Section styles */
+.contactSection {
+    background-color: #333333;
+    color: white;
+    padding: 60px 0;
+}
+
+.contactSection .column1 {
+    background-color: #333333;
+    text-align: left;
+}
+
+.contactSection .socialMedia a {
+    float: left;
+    padding: 20px 20px 0 0;
+    font-size: 1rem;
+}
+
+.contactSection .column1,
+.contactSection .column2,
+.contactSection .column3 {
+    float: left;
+    width: calc(33% - 33px);
+}
+
+.contactSection .column2 {
+     margin: 0 0 0 100px;
+}
+
+.contactSection .column2 h4 {
+    transform: translateX(10%);
+}
+
+.contactSection .column2 li {
+    text-align: left;
+}
+
+.contactSection .column3 {
+    text-align: right;
+}
+
+.contactSection h4 {
+    font-size: 1.125rem; 
+    padding-bottom: 10px;
+}
+
+.contactSection li,
+.contactSection p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+.contactSection p {
+    padding-bottom: 20px;
+}
+
+.contactSection a {
+    color: white;
+    line-height: 2;
+}
+
+.contactSection li {
+    list-style: none;
+    line-height: 1.6;
+}
+
+.contactSection .column2 li {
+    position: relative;
+}
+
+.contactSection .column2 li::before {
+    content: '';
+    width: 3px;
+    height: 3px;
+    background: white;
+    display: inline-block;
+    border-radius: 20%;
+    position: absolute;
+    top: 12px;
+    left: -10px;
+}
+
+.contactSection a:hover {
+    color: #c3dab7
+}
+
+.contactSection input {
+    border: 1px solid white;
+    background: white;
+    float: right;
+    margin: 0;
+    padding: 9px 10px;
+}
+
+.contactSection button {
+    background-color: #c3dab7;
+    border: 1px solid #c3dab7;
+    float: right;
+    margin: 0;
+    padding: 8px 12px;
+}
+
+.contactSection input[placeholder] {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8125rem; /* 13px */
+}
+/* end of GENERAL Aside Section styles */
+
+/* GENERAL Footer Styles */
+footer {
+    background-color: #333333;
+    border-top: 0.5px solid  #f6f6f6;
+    text-align: center;
+    padding-bottom: 1px;
+}
+
+footer p {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: white;
+    letter-spacing: 5px;
+    padding: 50px 0;
+}
+/* end of GENERAL Footer styles */
+/* END OF GENERAL STYLES (applies to Home, Blog and Contact) */
+
+
+/*WEBPAGE 1: ALL HOME STYLES */
+/* HOME Header styles */
+.homeHeader {
+    background: url(../assets/home-1.jpeg);
+    background-size: cover;
+    min-height: 100vh;
+    padding-top: 10px;
+}
+/* end of HOME Header styles */
+
+/* note: the below Decorative Vertical Line style applies to 2 parts of the Home webpage (between Header and Section 1 (Branding), and between Section 3 (Services) and Section 4 (Meet Our Team)  */
+.line {
+    border-left: 1px solid #333333;
+    width: 1px;
+    height: 120px;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    opacity: 0.5;
+}
+
+/* HOME Main Section styles */
+/* Section 1 (Branding) styles */
+.brandingSection {
+    background: #c3dab7;
+    padding-top: 30px;
+    height: 110vh;
+    position: relative;
+}
+
+.brandingSection h4 {
+   font-size: 1.125rem; 
+   text-align: center;
+}
+
+.brandingSection p {
+    font-size: 0.875rem; 
+}
+
+.brandingImg1 {
+    width: 253px;
+    position: absolute;
+    top: 57px;
+    left: 13%;
+    z-index: 200;
+}
+
+.brandingImg2 {
+    width: 469px;
+    position: absolute;
+    top: 150px;
+    left: 25%;
+    z-index: 100;
+}
+
+.brandingColumns {
+    padding-top: 20px;
+    transform: translate(12%, 350%);
+    text-align: center;
+}
+
+.brandingColumns .column1, 
+.brandingColumns .column2 {
+    float: left;
+    max-width: calc(35% - 25px);
+}
+
+.brandingColumns .column1 {
+    margin-right: 50px;
+}
+/* end of Section 1 (Branding styles) */
+
+/* Section 2 (Slideshow) starts */
+/* side arrows */
+.sideArrow {
+    width: 22.5%;
+}
+
+.fa-angle-right,
+.fa-angle-left {
+    font-size: 3rem; 
+    margin-top: 180px;
+}
+
+.fa-angle-right:hover,
+.fa-angle-left:hover {
+    color: #999999;
+}
+
+
+/* end of side arrow styles */
+
+/* slideshow content */
+.sideArrow, 
+.slideshow {
+    float: left;
+}
+
+.slideshowSection {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.slideshowSection p {
+    font-size: 1rem; 
+    color: #999999;
+    font-style: italic;
+    padding-top: 15px;
+    line-height: 1.7;
+}
+
+.slideshow {
+   width: 55%;
+}
+
+#slideshowImg {
+   width: 220px;
+   border-radius: 50%;
+}
+/* end of Section 2 (Slideshow)  */
+
+/* Section 3 (Services) starts */
+.servicesSection {
+    background: url(../assets/home-4.jpeg);
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    z-index: 300;
+}
+
+.servicesSection h4 {
+    font-size: 1.125rem; 
+}
+
+.servicesSection p {
+    font-size: 0.813rem; 
+    color: #999999;
+}
+
+.servicesContainer {
+    float: right;
+    width: 50%;
+    margin-top: 120px;
+    padding-bottom: 100px;
+    height: 100%;
+}
+
+.service {
+    float: left;
+    width: calc(45%);
+}
+
+.iconContainer {
+    border: 2px solid black;
+    border-radius: 50%;
+    text-align: center;
+    float: left;
+    margin-right: 20px;
+    margin-top: 25px;
+}
+
+.serviceIcon {
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+    padding-top: 12px;
+}
+
+.serviceContent {
+    float: left;
+    width: 70%;
+    margin-top: 5px;
+}
+/* end of Section 3 (Services) */
+
+/* Section 4 (Meet Our Team) styles */
+.teamSection {
+    padding: 100px 0;
+    position: relative;
+}
+
+.teamSection h3 {
+    text-align: center;
+}
+
+.teamSection h4 {
+    font-size: 1rem; 
+}
+
+.teamSection p {
+    font-size: 0.875rem; 
+    color: #999999;
+}
+
+.teamContainer {
+    margin-top: 100px;
+}
+
+.teamPlayersContainer {
+    background-color: #f6f6f6; 
+    width: calc(50% - 20px);
+    float: left;
+    min-height: 100%;
+}
+
+.teamPlayers {
+    text-align: left;
+    padding: 100px 25px 25px 25px;
+}
+
+
+.teamRow1, 
+.teamRow2 {
+    float: left;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.team {
+    float: left;
+    width: calc(25% - 20px);
+}
+
+.team img {
+    width: 100%;
+    display: block;
+}
+
+.teamPlayersContainer,
+.teamPlayer1,
+.teamPlayer3, 
+.teamPlayer4,
+.teamPlayer5 {
+    margin-right: 20px;
+}
+
+.workWithUs {
+    text-align: center;
+    position: relative;
+}
+
+.workWithUs h4 {
+    position: absolute;
+    max-width: 160px;
+    top: 80px;
+    left: 15%;
+}
+/* end of Section 4 (Meet Our Team) styles */
+
+
+/* Section 5 (Porfolio) styles */
+.portfolioSection {
+    height: 95vh;
+}
+
+.portfolioSection h4 {
+    font-size: 1.125rem; 
+}
+
+.portfolioSection p {
+    text-align: center;
+    color: #666666;
+    line-height: 1.5;
+}
+
+.portfolioBtn {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.875;
+    background: white;
+    border: 1px solid white;
+    padding: 0 22px;
+}
+
+.portfolioBtn:hover {
+    background: #999999;
+    border: 1px solid #999999;
+}
+
+.column1 {
+    background: #c3dab7;
+    height: 100%;
+}
+
+.portfolioContent {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    transform: translateY(65%);
+}
+
+.portfolioContent p {
+    padding: 20px 0;
+}
+
+.column1, .column2 {
+    float: left;
+    width: 50%;
+}
+
+.column2 img {
+    width: 100%;
+    height: 95vh;
+}
+/* end of Section 5 (Portfolio) styles */
+/* end of HOME Main Section styles */
+/* END OF WEBPAGE 1: ALL HOME STYLES */
+
+
+/* WEBPAGE 2: ALL BLOG STYLES */
+/* BLOG Header styles */
+.blogHeader {
+    background: url(../assets/blog-1.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding-top: 10px;
+}
+/* end of BLOG Header styles */
+
+/* BLOG Main Section styles */
+/* Section 1 (Blog Content) styles */
+.blogContent h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.125rem; 
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.blogContent h5 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.875rem; 
+    font-weight: 400;
+    color: #999999;
+}
+
+.blogContent p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.875rem; 
+    font-weight: 400;
+    color: #999999;
+    line-height: 1.5;
+    padding-bottom: 20px;
+}
+
+#blogPath {
+    color: black;
+}
+
+.blogInfo {
+    padding: 30px 0; 
+    border-bottom: 1px solid #999999;
+}
+
+.author,
+.info {
+    float: left;
+}
+
+.info {
+    margin-right: 10px;
+}
+
+.author {
+    width: 40%;
+}
+
+.info {
+    width: 18.3%;
+}
+
+.author img {
+    float: left;
+    width: calc(20% - 12.5px);
+    border-radius: 50%;
+    margin-top: 5px;
+}
+
+.authorInfo {
+    float: left;
+    width: calc(80% - 12.5px);
+    margin-left: 25px;
+}
+
+.blogPost p:first-child {
+    font-weight: 700;
+    color: black;
+}
+
+.blogPost {
+    padding-top: 40px;
+}
+
+.share h4 {
+    font-size: 1rem;
+    float: left;
+    margin-right: 20px;
+}
+
+.share .socialMedia {
+    float: left;
+}
+
+.share .socialMedia a {
+    float: left;
+    padding: 21px 20px 0 0;
+    font-size: 1rem;
+}
+
+.socialMedia a:hover {
+    color: #c3dab7;
+}
+
+/* end of Section 1 (Blog Content) styles */
+
+/* Section 2 (Related Posts) styles */
+.relatedPostsSection {
+    padding-top: 30px;
+}
+
+.relatedPostsSection h3,
+.commentSection h3,
+.leaveCommentSection h3 {
+    font-weight: 700;
+    font-size: 1.875rem; 
+}
+
+.relatedPostsSection p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.875rem; 
+    text-transform: uppercase;
+}
+
+.blogGallery {
+    border-top: 1px solid #999999;
+    padding: 40px 0;
+}
+
+.blogGallery img {
+    width: 100%;
+}
+
+.blogGallery figure {
+    float: left;
+    width: calc(33.3% - 16.67px);
+}
+
+.post2 {
+    margin: 0 25px;
+}
+/* end of Section 2 (Related Posts) styles */
+
+
+/* Section 3 (Comments) styles */
+.commentSection p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8125rem; 
+}
+
+.commentSection h3 {
+    border-bottom: 1px solid #F6F6F6;
+    padding-bottom: 15px;
+}
+
+.commenter {
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.reply {
+    text-transform: capitalize;
+    font-style: italic;
+    color: #405e31;
+}
+
+.commentContent {
+   color: #666666;
+}
+
+.commentDate {
+     font-size: 0.6875rem; 
+     color: #999999;
+}
+
+.commentBackground,
+.commentSection .imgContainer {
+    float: left;
+    background-color: #f6f6f6;
+}
+
+.commentSection .imgContainer {
+    margin-right: 35px;
+    width: calc(10% - 17.5px);
+}
+
+.commentSection img {
+    width: 100%;
+}
+
+.commentBackground {
+    width: calc(90% - 17.5px);
+    padding: 10px 25px 30px 25px;
+}
+
+.comment {
+    margin-bottom: 25px;
+}
+/* end of Section 3 (Comments) */
+
+
+/* Section 4 (Leave A Comment) / GENERAL FORM styles */
+/* IMPORTANT NOTE: the following GENERAL FORM styles also apply to contact.html (Section 1, contact form) */
+.leaveCommentSection {
+    padding-top: 25px;
+}
+
+.leaveCommentSection h3 {
+    border-bottom: 1px solid #F6F6F6;
+    padding-bottom: 15px;
+}
+
+input[placeholder],
+textarea[placeholder]
+ {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.875rem; /* 14px */
+    color: #999999;
+    border: 1px solid white;
+    border-bottom: 1px solid #999999;
+}
+
+.email {
+    text-transform: lowercase;
+    color: black;
+    border-bottom: 1px solid black;
+}
+
+.formRow1 input {
+    float: left;
+    width: calc(33.3% - 13.33px);
+    padding: 20px 0;
+}
+
+.formRow1 .email {
+    margin: 0 20px;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+}
+
+input[type=submit] {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 0.875rem; 
+    border: 1px solid white;
+    border-bottom: 1px solid black;
+    background: white;
+    padding: 0 0 5px 0;
+    margin: 50px 0 100px 0;
+}
+
+input[type=submit]:hover {
+    color:#c3dab7;
+    border-bottom:1px solid #c3dab7;
+}
+
+/* end of Section 4 (Leave A Comment) styles */
+/* end of BLOG Main Section styles */
+/* END OF WEBPAGE 2: ALL BLOG STYLES */
+
+
+/* WEBPAGE 3: CONTACT STYLES */
+/* CONTACT Header styles */
+.contactBackground {
+    background: url(../assets/contact-1.jpeg);
+    background-size: cover;
+    height: 25vh;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.contactBackground h2 {
+    font-size: 3.125rem; 
+    font-weight: 700;
+    text-align: left;
+    max-width: 200px;
+    float: left;
+    position: absolute;
+    top: 50px;
+    left: 0;
+}
+
+.contactBackground h2::before {
+	content: "";
+    height: 2.5px;
+    width: 28px;
+    background: black;
+    display: block;
+	position: absolute;
+	left: 3px;
+	top: -10px;
+}
+/* end of CONTACT Header styles */
+
+/* CONTACT Main styles */
+/* Section 1 (Contact Info) styles */
+.contactInfoSection {
+    margin: 100px auto;
+}
+
+.contactInfoSection h3 {
+    font-size: 1.125rem; 
+    font-weight: 700;
+}
+
+.contactInfoSection p {
+    font-size: 0.875rem; 
+    font-weight: 400;
+    color: #999999;
+    line-height: 1.5;
+    max-width: 530px;
+}
+
+.contactForm form {
+    margin-top: 50px;
+}
+
+.contactInfoSection .fas {
+    font-size: 40px;
+}
+
+.contactAddress {
+    border-left: 1px solid #999999;
+    border-right: 1px solid #999999;
+    height: 30vh;
+}
+
+.contactIcons {
+    margin: 60px 0;
+}
+
+.contactIcons p {
+    font-size: 0.8125rem;
+    color: #666666;
+}
+
+.contactIcon {
+    float: left;
+    width: 33.3%;
+    padding: 0 50px;
+}
+/* end of Section 1 (Contact Info) styles */
+
+/* Section 2 (Contact Img) styles */
+.contactImgSection {
+    background: url(../assets/contact-2.jpeg);
+    background-size: cover;
+    height: 65vh;
+}
+/* end of Section 2 (Contact Img) styles */
+/* end of CONTACT Main styles */
+/* END OF WEBPAGE 3: ALL CONTACT STYLES */
